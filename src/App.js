@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import bootstrap from 'bootstrap'
+//import bootstrap from '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Header from './components/Header'
 import Showcase from './components/Showcase'
 import Destinations from './components/Destinations'
@@ -11,6 +11,8 @@ import Error from './components/Error'
 import Donor from './components/Donor'
 import Request from './components/Request'
 import Aboutus from './components/Aboutus'
+import Dashboard from './components/Dashboard'
+
 
 
 function App() {
@@ -40,6 +42,9 @@ function App() {
         </Route>
         <Route path='*'>
           <Error />
+        </Route>
+        <Route path='/adminPanel'>
+          <Dashboard />
         </Route>
       </Switch>
       <Footer />

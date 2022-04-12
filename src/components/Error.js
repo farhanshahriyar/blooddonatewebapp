@@ -10,7 +10,9 @@ const Error = () => {
         justifyContent: 'center'
       }}
     >
-      <h1>Looks like the page you were looking for does not exist</h1>
+      <h1>404 ! ERROR</h1> 
+      <br></br>
+      <h1>Look's like the page you were looking for does not exist</h1>
     </div>
   )
 }
